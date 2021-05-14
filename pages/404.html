@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Oops! Page not Found</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="icon" href="../images/favicon.png">
+  <link href="../css/fontawesome.css" rel="stylesheet">
+  <link href="../css/brands.css" rel="stylesheet">
+  <link href="../css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <div class="container marketing">
+
+        <hr class="featurette-divider">
+        <div class="row featurette first-page">
+          <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Page Not Found</h2>
+            <p class="lead">Maybe the page is not uploaded or taken down by the author</p>
+            <a onclick="goBack()" class="btn btn-outline-warning">Go back</a>
+          </div>
+          <div data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="col-md-5 order-md-1">
+
+            <img src="../images/404.png" alt="" width="500" height="500">
+
+          </div>
+        </div>
+        <hr id="first-content" class="featurette-divider">
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+  <!--AOS SCRIPT-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--go back button-->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+
+</html>
