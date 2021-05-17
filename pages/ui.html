@@ -284,53 +284,55 @@
           <div class="modal-body">
 
             <div id="carouselExampleControls1" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active embed-responsive embed-responsive-1by1">
+                  <iframe src="https://xd.adobe.com/embed/77978b30-0b58-46a5-a00b-86552052fff5-22c4/?fullscreen" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
 
-              <iframe src="https://xd.adobe.com/embed/77978b30-0b58-46a5-a00b-86552052fff5-22c4/?fullscreen" frameborder="0" allowfullscreen></iframe>
             </div>
-
+          </div>
+          <div class="modal-footer bg-dark">
+            <a href="https://xd.adobe.com/view/77978b30-0b58-46a5-a00b-86552052fff5-22c4/?fullscreen" target="_blank" class="btn btn-primary">Go to External Link</a>
           </div>
         </div>
-        <div class="modal-footer bg-dark">
-          <a href="https://xd.adobe.com/view/77978b30-0b58-46a5-a00b-86552052fff5-22c4/?fullscreen" target="_blank" class="btn btn-primary">Go to External Link</a>
-        </div>
       </div>
+
     </div>
 
-  </div>
 
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <!--AOS SCRIPT-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--Loader-->
+    <script>
+      window.onload = function() {
+        document.getElementById("loader").style.display = 'none';
+      };
+    </script>
+    <!--  copy clipboard  -->
+    <script>
+      $('#tooltip-phone').tooltip('enable')
+      var myCarousel = document.querySelector('#first-carousel')
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: false
+      })
 
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/popper.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/main.js"></script>
-  <!--AOS SCRIPT-->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <!--Loader-->
-  <script>
-    window.onload = function() {
-      document.getElementById("loader").style.display = 'none';
-    };
-  </script>
-  <!--  copy clipboard  -->
-  <script>
-    $('#tooltip-phone').tooltip('enable')
-    var myCarousel = document.querySelector('#first-carousel')
-    var carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 2000,
-      wrap: false
-    })
-
-    function copyToClipboard(element) {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($(element).text()).select();
-      document.execCommand("copy");
-      $temp.remove();
-    }
-  </script>
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+    </script>
 
 </body>
 
