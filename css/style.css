@@ -8469,3 +8469,6 @@ a[data-toggle="collapse"] {
     transform: rotate(360deg);
   }
 }
+.pl_icon{
+  width: 30px;
+}
